@@ -1,12 +1,41 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETran Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher 64</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Encryption</h1>
-    <h3>Multiple-shift Caesar cipher with 64-character alphabet and reverse transform.</h3>
-    <p>Use the following webapp, and the encryption is done in the browser without any server interaction.</p>
-</body>
-</html>
+
+  <header>
+    <h1>Caesar Cipher 64 (CC64)</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <label for="inputText">Enter Text:</label>
+      <textarea id="inputText" rows="4"></textarea>
+    </div>
+
+    <div class="container">
+      <label for="key">Key:</label>
+      <input type="password" id="key">
+    </div>
+
+    <div class="container">
+      <button onclick="encode()">Encode</button>
+      <button onclick="decode()">Decode</button>
+    </div>
+
+    <div class="container">
+      <label for="outputText">Result:</label>
+      <textarea id="outputText" rows="4" readonly></textarea>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CC64 Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
