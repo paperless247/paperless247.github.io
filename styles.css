@@ -21,6 +21,7 @@ body {
   
   label {
     display: block;
+    font-weight: bold;
   }
   
   textarea,
@@ -43,4 +44,13 @@ body {
     bottom: 0;
     width: 100%;
   }
-  
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
