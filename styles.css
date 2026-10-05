@@ -23,6 +23,10 @@ body {
     display: block;
     font-weight: bold;
   }
+
+  #physical {
+    text-align: right;
+  }
   
   textarea,
   input[type="number"] {
